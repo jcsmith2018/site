@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Apu Store - Detalle de Productos Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon11.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <!--
+
+    -->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:apustore17@gmail.com">apustore17@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">+34 695-945-727</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Apu Store
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Productos</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="segundavida.html">Segunda Vida</a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>-->
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-talla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Guia de tallas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="assets/img/guia_tallas.png">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-tallaquik" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Guia de tallas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="assets/img/Guia_camisetasquik.png">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Content -->
+    <section class="bg-light">
+        <div class="container pb-5">
+            <div id="mcmurdoc" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/Mcmurdo_front.jpg" alt="Card image cap" id="product-detail">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Mcmurdo_front.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Mcmurdo_frontOpen.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Mcmurdo_behind.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Chaqueta Mcmurdo Summit Navy</h1>
+                            <p class="h3 py-2">Precio Oferta: €280.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">The North Face</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Un modelo icónico, la parka larga McMurdo Jacket Summit Navy para hombre de la marca The North Face te permitirá afrontar los rudos inviernos con tecnicidad y estilo.
+                                Hecha de nylon reciclado, es cálida y transpirable, además les encantará a los amantes de la naturaleza. Con su nombre derivado de la más grande comunidad de Antártica,
+                                protege a quienes se enfrentan a condiciones invernales extremas. Su tejido impermeable con una membrana DRYVENT™ constituye un auténtico escudo frente a la lluvia, el
+                                viento y la nieve, te mantiene seco por mucho tiempo. Esta tecnología también optimiza la evacuación de la humedad, garantizando comodidad y frescura durante todo el día.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Azul</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido: Punto 100 % Nailon Reciclado DryVent De 159 g/m2, 200 Denieres, Hidrófugo Duradero.</li>
+                                <li class="fs-6">- Plumón De 550 Cuins Con Certificado RDS.</li>
+                                <li class="fs-6">- Impermeable: Proporciona una barrera impenetrable de protección contra la humedad.</li>
+                                <li class="fs-6">- Capucha desmontable con ribete de pelo desmontable.</li>
+                                <li class="fs-6">- Cremallera bidireccional central con tapeta y botones a presión ocultos.</li>
+                                <li class="fs-6">- Puños con cierre ajustable de Velcro.</li>
+                                <li class="fs-6">- Ajuste en la cintura y en el bajo.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-talla">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>M</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+                                    <!--<div class="col-auto">
+                                <ul class="list-inline pb-3">
+                                    <li class="list-inline-item text-right">
+                                        Quantity
+                                        <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                                    </li>
+                                    <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                </ul>
+                            </div>-->
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                    <!--<div class="col d-grid">
+                                <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Add To Cart</button>
+                            </div>-->
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nutpse" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/RetroNutse_solo.jpg" alt="Card image cap" id="product-detail2">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="carrosel-nutpse" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/RetroNutse_solo.jpg" alt="Product image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/RetroNutse_behind.jpg" alt="Product image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/RetroNutse_Frente.jpg" alt="Product image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Nuptse Retro 1996</h1>
+                            <p class="h3 py-2">Precio Oferta: €240.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">The North Face</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Corte holgado: la prenda queda un poco suelta para que sea más cómoda de llevar. Nuestro emblemático diseño Nuptse llega desde las pistas de esquí de los
+                                años 90 al entorno urbano. La chaqueta plegable 1996 Retro Nuptse tiene una silueta holgada y geométrica, confeccionada en el tejido antidesgarros brillante
+                                del modelo original y cuenta con el mítico acolchado con secciones extragrandes y capucha plegable para que vayas abrigado y seco cuando hace frío y llueve.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Verde</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Confección waffle de gran tamaño.</li>
+                                <li class="fs-6">- Corte relajado con silueta cuadrada.</li>
+                                <li class="fs-6">- Tejido ripstop brillante original para una mayor durabilidad</li>
+                                <li class="fs-6">- Revestimiento sin PFC para una protección mejorada.</li>
+                                <li class="fs-6">- El plumón de ganso de 700 cuins proporciona calidez y es extremadamente compresible.</li>
+                                <li class="fs-6">- La capucha de tres piezas, que se puede guardar, se guarda en el cuello alto.</li>
+                                <li class="fs-6">- Bolsillos laterales con cremallera.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-talla">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="zaneck" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/zaneck_front.jpg" alt="Card image cap" id="product-detail3">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="carrosel-nutpse" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/zaneck_front.jpg" alt="Product image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/zaneck_back.jpg" alt="Product image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/zaneck_frente.jpg" alt="Product image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Parka Zaneck Con Capucha</h1>
+                            <p class="h3 py-2">Precio Oferta: €270.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">The North Face</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Ideal para actividades al aire libre, la chaqueta Zaneck para hombre, de The North Face aporta una comodidad superior, facilita el movimiento, protege de la
+                                humedad y ayuda a conservar una temperatura corporal estable. Está confeccionada con tejido técnico transpirable DryVent de dos capas que cumplen con diferentes
+                                funciones: la primera repele la lluvia, la nieve y otro tipo de humedad exterior, mientras que la segunda se encarga de expulsar el sudor para mantener la piel
+                                seca en todo momento.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Beige</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Confección waffle de gran tamaño.</li>
+                                <li class="fs-6">- Capucha con pelo sintético extraíble.</li>
+                                <li class="fs-6">- Cierre de cremallera metálica y solapa con botones.</li>
+                                <li class="fs-6">- Cuello alto.</li>
+                                <li class="fs-6">- Bolsillos laterales con solapa.</li>
+                                <li class="fs-6">- Bolsillo interior.</li>
+                                <li class="fs-6">- Botón a presión en los puños.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-talla">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>M</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quest" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/Quest_front.jpg" alt="Card image cap" id="product-detail4">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="carrosel-nutpse" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Quest_front.jpg" alt="Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Quest_back.jpg" alt="Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/Quest_frente.jpg" alt="Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#carrosel-nutpse" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Quest DryVent verde</h1>
+                            <p class="h3 py-2">Precio Oferta: €85.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">The North Face</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                La chaqueta fina The North Face Quest DryVent es un shell impermeable con capucha, de tacto muy suave y confortable. Una prenda pensada para la montaña,
+                                con forro de malla en el tronco y tejido muy suave en el cuello y en la guarda de la barbilla, que añade más confort. El tejido DryVent duradero repele
+                                la humedad para mantenerte seco todo el día y es 100 % resistente al viento. La capucha ajustable y plegable y la solapa de protección con cierre de Velcro
+                                aportan mayor capacidad impermeable.
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Verde</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Confección waffle de gran tamaño.</li>
+                                <li class="fs-6">- Acabado hidrófugo resistente (DWR).</li>
+                                <li class="fs-6">- Forro del protector de la barbilla y del cuello en tejido de punto cepillado.</li>
+                                <li class="fs-6">- Cuello alto.</li>
+                                <li class="fs-6">- Capucha fija con ajuste en un solo sentido.</li>
+                                <li class="fs-6">- Dos bolsillos para las manos, cubiertos con cierre de cremallera seguro.</li>
+                                <li class="fs-6">- Logotipo por transferencia térmica.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-talla">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="marino" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/front_marine_azul.jpg" alt="Card image cap" id="product-detail5">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_marine_azul.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_marinenohead_azul.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/back_marine_azul.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Camiseta Azul Marino Quiksilver</h1>
+                            <p class="h3 py-2">Precio Oferta: €18.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">QuikSilver</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Tradesmith - Camiseta para Hombre
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Azul Marino</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido: Tejido de algodón [160 g / m2].</li>
+                                <li class="fs-6">- Corte: corte normal.</li>
+                                <li class="fs-6">- Cuello: Cuello redondo.</li>
+                                <li class="fs-6">- Mangas: manga corta.</li>
+                                <li class="fs-6">- Marca: detalles de temporada Quiksilver en el pecho.</li>
+                                <li class="fs-6">- Otras características: cuello de punto acanalado.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-tallaquik">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="M">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="verde" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/front_verde.jpg" alt="Card image cap" id="product-detail6">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_verde.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_nohead_verde.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/back_verde.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Camiseta Comp Verde Quiksilver</h1>
+                            <p class="h3 py-2">Precio Oferta: €18.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">QuikSilver</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Comp Logo - Camiseta para Hombre
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Azul Marino</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido de punto jersey hecho de algodón [160 g / m2].</li>
+                                <li class="fs-6">- Corte: corte normal.</li>
+                                <li class="fs-6">- Cuello: Cuello redondo.</li>
+                                <li class="fs-6">- Mangas: manga corta.</li>
+                                <li class="fs-6">- Marca: serigrafía en el pecho.</li>
+                                <li class="fs-6">- Otras características: Etiqueta Quiksilver de tela en la manga.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-tallaquik">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="M">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="violeta" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/front_violeta.jpg" alt="Card image cap" id="product-detail7">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_violeta.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_nohead_violeta.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/back_violeta.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">MW Mini - Camiseta para Hombre</h1>
+                            <p class="h3 py-2">Precio Oferta: €18.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">QuikSilver</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                MW Mini - Camiseta para Hombre
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Rosa</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido de punto jersey hecho de algodón [160 g / m2].</li>
+                                <li class="fs-6">- Corte: corte normal.</li>
+                                <li class="fs-6">- Cuello: Cuello redondo.</li>
+                                <li class="fs-6">- Mangas: manga corta.</li>
+                                <li class="fs-6">- Marca: estampado del logo Quiksilver de alta definición en el pecho.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-tallaquik">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="M">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="amarillo" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/front_amarillo.jpg" alt="Card image cap" id="product-detail8">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_amarillo.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_nohead_amarillo.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/back_amarillo.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Simple Script - Camiseta de manga corta para Hombre</h1>
+                            <p class="h3 py-2">Precio Oferta: €18.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">QuikSilver</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Simple Script - Camiseta de manga corta para Hombre
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Amarillo</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido de punto jersey hecho de algodón [160 g / m2].</li>
+                                <li class="fs-6">- Corte: corte normal.</li>
+                                <li class="fs-6">- Cuello: Cuello redondo.</li>
+                                <li class="fs-6">- Mangas: manga corta.</li>
+                                <li class="fs-6">- Marca: Diseño con gran estampado en la espalda y serigrafía en el pecho.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-tallaquik">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="M">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="azul" hidden class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/front_azul.jpg" alt="Card image cap" id="product-detail9">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previo</span>
+                            </a>
+                        </div>
+
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_azul.jpg" alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/front_nohead_azul.jpg" alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/back_azul.jpg" alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Line By Line - Camiseta para Hombre</h1>
+                            <p class="h3 py-2">Precio Oferta: €18.00</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong style="color:dodgerblue">QuikSilver</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p style="text-align: justify">
+                                Line By Line - Camiseta para Hombre
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Azul</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="fs-6">- Tejido de punto jersey hecho de algodón [160 g / m2].</li>
+                                <li class="fs-6">- Corte: corte normal.</li>
+                                <li class="fs-6">- Cuello: Cuello redondo.</li>
+                                <li class="fs-6">- Mangas: manga corta.</li>
+                                <li class="fs-6">- Marca: detalles de temporada Quiksilver en el pecho y la espalda.</li>
+                            </ul>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-tallaquik">Guia de tallas</button>
+                                </li>
+                            </ul>
+                            <br />
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">
+                                                Talla :
+                                                <input type="hidden" name="product-size" id="product-size" value="M">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>S</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>L</del></span></li>
+                                            <li class="list-inline-item"><span class="btn btn-warning btn-size"><del>XL</del></span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Contactar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Apu Store</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Madrid
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none">+34-695-945-727</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:apustore17@gmail.com">apustore17@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información adicional</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca de</a></li>
+                        <li><a class="text-decoration-none" href="#">Productos</a></li>
+                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 Apustore
+                            | Designed by <a>Apu Store</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- End Script -->
+    <!-- Start Slider Script -->
+
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            // Obtener los parámetros de la URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var mostrarmurdoc = urlParams.get('mostrarproducto1');
+            var mostrarnutpse = urlParams.get('mostrarproducto2');
+            var mostrarzaneck = urlParams.get('mostrarproducto3');
+            var mostrarquest = urlParams.get('mostrarproducto4');
+            var mostrarceleste = urlParams.get('mostrarproducto8');
+            var mostrarverde = urlParams.get('mostrarproducto6');
+            var mostrarvioleta = urlParams.get('mostrarproducto5');
+            var mostraramarillo = urlParams.get('mostrarproducto7');
+            var mostrarazul = urlParams.get('mostrarproducto9');
+
+            // Si el parámetro ocultarDiv es true, ocultar el div
+            if (mostrarmurdoc === 'true') {
+                $('#mcmurdoc').attr("hidden", false)
+
+            }
+
+            if (mostrarnutpse === 'true') {
+                $('#nutpse').attr("hidden", false)
+            }
+
+            if (mostrarzaneck === 'true') {
+                $('#zaneck').attr("hidden", false)
+            }
+
+            if (mostrarquest === 'true') {
+                $('#quest').attr("hidden", false)
+            }
+
+            if (mostrarceleste === 'true') {
+                $('#marino').attr("hidden", false)
+            }
+
+            if (mostrarverde === 'true') {
+                $('#verde').attr("hidden", false)
+            }
+
+            if (mostrarvioleta === 'true') {
+                $('#violeta').attr("hidden", false)
+            }
+
+            if (mostraramarillo === 'true') {
+                $('#amarillo').attr("hidden", false)
+            }
+
+            if (mostrarazul === 'true') {
+                $('#azul').attr("hidden", false)
+            }
+
+
+            console.log(mostrarmurdoc)
+        });
+
+        $('#carousel-related-product').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            dots: true,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 3
+                }
+            }
+            ]
+        });
+
+    </script>
+
+</body>
+
+</html>
+
